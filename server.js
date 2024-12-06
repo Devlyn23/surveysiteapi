@@ -15,7 +15,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
-mongoose.connect("mongodb+srv://dander78:y7uY2mqwXCHbqntM@assignment2.b5l86.mongodb.net/SurveyDB?retryWrites=true&w=majority&appName=Assignment2", { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('Connected to Database'));
