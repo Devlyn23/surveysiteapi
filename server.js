@@ -7,7 +7,6 @@ const cookieParser = require('cookie-parser');
 const { requireAuth } = require('./utils/utils');
 
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://clinquant-llama-529bd5.netlify.app/'],
   credentials: true, // allow cookies to be sent
 };
 
