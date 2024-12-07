@@ -32,7 +32,7 @@ router.post("/registration", async (req, res) => {
       httpOnly: true,
       secure: false,
       maxAge: 3 * 24 * 60 * 60 * 1000, // 3 days
-      sameSite: "None", // cross-site requests
+      sameSite:'none', // cross-site requests
     });
 
     res
@@ -68,7 +68,7 @@ router.post("/login", async (req, res) => {
       httpOnly: true,
       secure: false,
       maxAge: 3 * 24 * 60 * 60 * 1000, // 3 days
-      sameSite: "None", // cross-site requests
+      sameSite:'none', // cross-site requests
     });
 
     res.status(200).json({ message: "Login successful", userId: user._id });
