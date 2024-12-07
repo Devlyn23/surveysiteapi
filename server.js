@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const { requireAuth } = require('./utils/utils');
 
 const corsOptions = {
+  origin: "https://clinquant-llama-529bd5.netlify.app",
   credentials: true, // allow cookies to be sent
 };
 
