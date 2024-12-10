@@ -32,7 +32,8 @@ router.post("/registration", async (req, res) => {
       httpOnly: true,
       secure: false,
       maxAge: 3 * 24 * 60 * 60 * 1000, // 3 days
-      sameSite:'none', // cross-site requests
+      sameSite: "None", // cross-site requests
+      secure: true,
     });
 
     res
